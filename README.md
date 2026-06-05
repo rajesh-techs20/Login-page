@@ -1,7 +1,7 @@
 # Login-page
 A responsive login-form built using HTML,CSS, and JavaScript.
 
-##Features
+## Features
 -Email Validation
 -Password Validation
 -Alert Messages

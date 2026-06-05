@@ -1,0 +1,188 @@
+body {
+    max-width: 100%;
+    background: linear-gradient(45deg,blue,black,brown);
+    background-size: 400% 400%;
+    animation: color 4s ease infinite;
+    padding: 200px;
+    margin: 0 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+@keyframes color {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+    
+}
+.container {
+    width: 30%;
+    padding: 15px;
+    margin: 0 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-top: 5px;
+    transition: 1s;
+}
+.container:hover{
+    transform: scale(1.07);
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+.tick {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    
+}
+.log label{
+    font-size: x-large;
+    color: black;
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.log input{
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 30px;
+    padding: 10px;
+}
+.tick input {
+    height: fit-content;
+}
+.log p {
+    color: blue;
+    text-decoration: underline;
+}
+button {
+    background-color: blueviolet;
+    color: white;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px;
+    width: 90%;
+    transition: 0.3s;
+}
+ button:hover{
+    background-color:  darkblue;
+    transform: scale(1.08px);
+}
+.container h6 {
+    font-size: larger;
+    color: black;
+}
+.container p {
+    color: blue;
+    text-decoration: underline;
+}
+.hide{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: opx;
+}
+.input{
+    margin-top: 2px;
+}
+.hide input{
+    width: auto;
+    height: auto;
+}
+.icon {
+    position: relative;
+}
+.icon i{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+.icon input{
+    padding-left: 30px;
+    border: 1px solid black;
+}
+.hide label{
+    font-size: medium;
+}
+@media(max-width: 768px){
+    body{
+        padding: 10px;
+
+    }
+    .container {
+        max-width: 768px;
+        width: 100%;
+        padding: 0%;
+    }
+    .log input {
+        width: 80%;
+        padding: 4px;
+    }
+    .log {
+        margin-left: 10px;
+    }
+    button {
+        width: 80%;
+    }
+    .container h6 {
+        margin-left: 10px;
+        font-size: small;
+    }
+    .container p {
+        margin-left: 10px;
+        margin-top: 3px;
+            
+    }
+    .hide{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+    .hide input{
+        width: auto;
+        height: auto;
+    }
+    .hide label{
+        font-size: medium;
+    }
+    .icon {
+    position: relative;
+    }
+    .icon i{
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: gray;
+    }
+    .icon input{
+        padding-left: 30px;
+        border: 1px solid black;
+    }
+}
+.container h1{
+    font-size: 40px;
+}
+.input p{
+    color: red;
+    font-size: small;
+    text-decoration: none;
+}
